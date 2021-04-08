@@ -1,13 +1,11 @@
 import { Container } from "./styles";
-import { useEffect, useState } from "react";
-import { api } from "../../services/api";
 import { useContext } from "react";
 import { TransactionsContext } from "../../TransactionsContext";
 
 //----------------------------------
 
 export const TransactionsTrable = () => {
-  const transactions = useContext(TransactionsContext);
+  const { transactions } = useContext(TransactionsContext);
 
   return (
     <Container>
